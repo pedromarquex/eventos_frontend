@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+    <script src="js/main.js"></script>
+    <title>Index | Eventos UFPI</title>
+</head>
+
+<body>
+    <nav class="navbar is-dark is-bold" role="navigation" aria-label="main navigation">
+        <div class="container" id="navbar-container">
+            <div class="navbar-brand">
+                <a class="navbar-item" id="logo" href="#">EVENTOS | UFPI</a>
+                <a id="navbar-burger" role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false"
+                    data-target="navbar" onclick="toggleMenu()">
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                </a>
+            </div>
+            <div id="navbar" class="navbar-menu">
+                <div class="navbar-end">
+                    <a href="#" class="navbar-item">Login</a>
+                    <div class="navbar-item has-dropdown is-hoverable">
+                        <a class="navbar-link">
+                            Admin
+                        </a>
+
+                        <div class="navbar-dropdown">
+                            <a class="navbar-item">
+                                Meus Eventos
+                            </a>
+                            <a class="navbar-item">
+                                Organizadores
+                            </a>
+                            <hr class="navbar-divider">
+                            <a class="navbar-item">
+                                Sair
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <section class="section has-background-light" style="min-height: 100%;">
+        <h1 class="title has-text-centered is-1">Organizadores de Eventos</h1>
+        <div class="container" id="main-container">
+            <form method="get">
+                <div class="field is-grouped">
+                    <p class="control is-expanded">
+                        <input class="input" type="text" placeholder="Nome do Organizador">
+                    </p>
+                    <p class="control is-expanded">
+                        <input class="input" type="text" placeholder="Usuário">
+                    </p>
+                    <p class="control">
+                        <a class="button is-info has-icons-left">
+                            <span class="icon is-small is-left">
+                                <i class="fas fa-search"></i>
+                            </span>
+                            <span>Procurar</span>
+                        </a>
+                    </p>
+                    <p class="control">
+                        <a class="button is-dark has-icons-left">
+                            <span class="icon is-small is-left">
+                                <i class="fas fa-plus"></i>
+                            </span>
+                            <span>Novo Organizador</span>
+                        </a>
+                    </p>
+                </div>
+            </form>
+            <table class="table is-striped is-bordered is-fullwidth is-hoverable" style="margin-top: 15px;">
+                <thead>
+                    <tr>
+                        <th>Nome</th>
+                        <th>Email</th>
+                        <th>Usuário</th>
+                        <th></th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            Organizador 1
+                        </td>
+                        <td>
+                            organizador1@ufpi.edu.br
+                        </td>
+                        <td>
+                            organizador1
+                        </td>
+                        <td>
+                            <a href="#" class="link">
+                                <span class="icon is-small is-left has-text-dark">
+                                    <i class="fas fa-edit"></i>
+                                </span>
+                            </a>
+                        </td>
+                        <td>
+                            <a href="#" class="link">
+                                <span class="icon is-small is-left has-text-danger">
+                                    <i class="fas fa-trash"></i>
+                                </span>
+                            </a>
+                        </td>
+
+                    </tr>
+                    <tr>
+                        <td>
+                            Organizador 1
+                        </td>
+                        <td>
+                            organizador1@ufpi.edu.br
+                        </td>
+                        <td>
+                            organizador1
+                        </td>
+                        <td>
+                            <a href="#" class="link">
+                                <span class="icon is-small is-left">
+                                    <i class="fas fa-edit"></i>
+                                </span>
+                            </a>
+                        </td>
+                        <td>
+                            <a href="#" class="link">
+                                <span class="icon is-small is-left">
+                                    <i class="fas fa-trash"></i>
+                                </span>
+                            </a>
+                        </td>
+
+                    </tr>
+                    <tr>
+                        <td>
+                            Organizador 1
+                        </td>
+                        <td>
+                            organizador1@ufpi.edu.br
+                        </td>
+                        <td>
+                            organizador1
+                        </td>
+                        <td>
+                            <a href="#" class="link">
+                                <span class="icon is-small is-left">
+                                    <i class="fas fa-edit"></i>
+                                </span>
+                            </a>
+                        </td>
+                        <td>
+                            <a href="#" class="link">
+                                <span class="icon is-small is-left">
+                                    <i class="fas fa-trash"></i>
+                                </span>
+                            </a>
+                        </td>
+
+                    </tr>
+                    <tr>
+                        <td>
+                            Organizador 1
+                        </td>
+                        <td>
+                            organizador1@ufpi.edu.br
+                        </td>
+                        <td>
+                            organizador1
+                        </td>
+                        <td>
+                            <a href="#" class="link">
+                                <span class="icon is-small is-left">
+                                    <i class="fas fa-edit"></i>
+                                </span>
+                            </a>
+                        </td>
+                        <td>
+                            <a href="#" class="link">
+                                <span class="icon is-small is-left">
+                                    <i class="fas fa-trash"></i>
+                                </span>
+                            </a>
+                        </td>
+
+                    </tr>
+                    <tr>
+                        <td>
+                            Organizador 1
+                        </td>
+                        <td>
+                            organizador1@ufpi.edu.br
+                        </td>
+                        <td>
+                            organizador1
+                        </td>
+                        <td>
+                            <a href="#" class="link">
+                                <span class="icon is-small is-left">
+                                    <i class="fas fa-edit"></i>
+                                </span>
+                            </a>
+                        </td>
+                        <td>
+                            <a href="#" class="link">
+                                <span class="icon is-small is-left">
+                                    <i class="fas fa-trash"></i>
+                                </span>
+                            </a>
+                        </td>
+
+                    </tr>
+                    <tr>
+                        <td>
+                            Organizador 1
+                        </td>
+                        <td>
+                            organizador1@ufpi.edu.br
+                        </td>
+                        <td>
+                            organizador1
+                        </td>
+                        <td>
+                            <a href="#" class="link">
+                                <span class="icon is-small is-left">
+                                    <i class="fas fa-edit"></i>
+                                </span>
+                            </a>
+                        </td>
+                        <td>
+                            <a href="#" class="link">
+                                <span class="icon is-small is-left">
+                                    <i class="fas fa-trash"></i>
+                                </span>
+                            </a>
+                        </td>
+
+                    </tr>
+                    <tr>
+                        <td>
+                            Organizador 1
+                        </td>
+                        <td>
+                            organizador1@ufpi.edu.br
+                        </td>
+                        <td>
+                            organizador1
+                        </td>
+                        <td>
+                            <a href="#" class="link">
+                                <span class="icon is-small is-left">
+                                    <i class="fas fa-edit"></i>
+                                </span>
+                            </a>
+                        </td>
+                        <td>
+                            <a href="#" class="link">
+                                <span class="icon is-small is-left">
+                                    <i class="fas fa-trash"></i>
+                                </span>
+                            </a>
+                        </td>
+
+                    </tr>
+                    <tr>
+                        <td>
+                            Organizador 1
+                        </td>
+                        <td>
+                            organizador1@ufpi.edu.br
+                        </td>
+                        <td>
+                            organizador1
+                        </td>
+                        <td>
+                            <a href="#" class="link">
+                                <span class="icon is-small is-left">
+                                    <i class="fas fa-edit"></i>
+                                </span>
+                            </a>
+                        </td>
+                        <td>
+                            <a href="#" class="link">
+                                <span class="icon is-small is-left">
+                                    <i class="fas fa-trash"></i>
+                                </span>
+                            </a>
+                        </td>
+
+                    </tr>
+                    <tr>
+                        <td>
+                            Organizador 1
+                        </td>
+                        <td>
+                            organizador1@ufpi.edu.br
+                        </td>
+                        <td>
+                            organizador1
+                        </td>
+                        <td>
+                            <a href="#" class="link">
+                                <span class="icon is-small is-left">
+                                    <i class="fas fa-edit"></i>
+                                </span>
+                            </a>
+                        </td>
+                        <td>
+                            <a href="#" class="link">
+                                <span class="icon is-small is-left">
+                                    <i class="fas fa-trash"></i>
+                                </span>
+                            </a>
+                        </td>
+
+                    </tr>
+                    <tr>
+                        <td>
+                            Organizador 1
+                        </td>
+                        <td>
+                            organizador1@ufpi.edu.br
+                        </td>
+                        <td>
+                            organizador1
+                        </td>
+                        <td>
+                            <a href="#" class="link">
+                                <span class="icon is-small is-left">
+                                    <i class="fas fa-edit"></i>
+                                </span>
+                            </a>
+                        </td>
+                        <td>
+                            <a href="#" class="link">
+                                <span class="icon is-small is-left">
+                                    <i class="fas fa-trash"></i>
+                                </span>
+                            </a>
+                        </td>
+
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+    <footer class="footer hero is-dark">
+        <div class="content has-text-centered">
+            <p>
+                Developed by LASCO&#8482;
+            </p>
+        </div>
+    </footer>
+
+
+</body>
+
+</html>

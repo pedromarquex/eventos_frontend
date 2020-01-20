@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+    <script src="js/main.js"></script>
+    <title>Login | Eventos UFPI</title>
+</head>
+
+<body>
+    <nav class="navbar is-dark is-bold" role="navigation" aria-label="main navigation">
+        <div class="container" id="navbar-container">
+            <div class="navbar-brand">
+                <a class="navbar-item" id="logo" href="#">EVENTOS | UFPI</a>
+                <a id="navbar-burger" role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false"
+                    data-target="navbar" onclick="toggleMenu()">
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                </a>
+            </div>
+            <div id="navbar" class="navbar-menu">
+                <div class="navbar-end">
+                    <a href="#" class="navbar-item">Login</a>
+                    <div class="navbar-item has-dropdown is-hoverable">
+                        <a class="navbar-link">
+                            Admin
+                        </a>
+
+                        <div class="navbar-dropdown">
+                            <a class="navbar-item">
+                                Meus Eventos
+                            </a>
+                            <a class="navbar-item">
+                                Organizadores
+                            </a>
+                            <hr class="navbar-divider">
+                            <a class="navbar-item">
+                                Sair
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <section class="hero is-light is-medium">
+        <div class="hero-body">
+            <div class="box" id="login-box">
+                <form>
+                    <div class="field">
+                        <label class="label" id="user-label">Usuário</label>
+                        <div class="control has-icons-left has-icons-right">
+                            <input class="input" type="text" placeholder="Digite seu usuário do sistema">
+                            <span class="icon is-small is-left">
+                                <i class="fas fa-user"></i>
+                            </span>
+                        </div>
+                    </div>
+
+                    <div class="field">
+                        <label class="label">Senha</label>
+                        <div class="control has-icons-left has-icons-right">
+                            <input class="input" type="password" placeholder="Digite sua senha">
+                            <span class="icon is-small is-left">
+                                <i class="fas fa-key"></i>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="field">
+                        <div class="control columns is-centered is-mobile is-desktop" id="login-submit-control">
+                            <button class="button is-dark" id="login-button">Entrar</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+    <footer class="footer hero is-dark" id="footer">
+        <div class="content has-text-centered">
+            <p>
+                Developed by LASCO&#8482;
+            </p>
+        </div>
+    </footer>
+
+
+</body>
+
+</html>
